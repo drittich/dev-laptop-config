@@ -6,6 +6,8 @@ A Powershell script to install some default apps via chocolatey
 
 Open an admin Powershell prompt and run `.\dev-laptop-config.ps1`. This should install Chocolatey if it is not already installed, and then will begin installation of the apps.
 
+> Note: You must be in the same directory as `dev-laptop-config.ps1` when you execute it.
+
 ## Configuration
 
 You can tweak the list of applications assigned to the variable `$chocolateyAppList` in  `dev-laptop-config.ps1` if you want to make any modifications. You can search for available Chocolatey package names here: https://chocolatey.org/packages
