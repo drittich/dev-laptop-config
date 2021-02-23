@@ -1,0 +1,5 @@
+$chocolateyAppList = "googlechrome,firefox,7zip,dotnetcore-sdk,dotnetcore-windowshosting,nodejs,winmerge,vscode,azure-data-studio,openvpn,paint.net,zoom,microsoft-teams,vlc,visualstudio2019enterprise,adobereader,git,sql-server-2019,sql-server-management-studio,kdiff3,gitextensions,docker-desktop,filezilla,github-desktop,urlrewrite,wsl,mongodb-compass,postman,python,ruby,microsoft-windows-terminal"
+# Run "Dism /online /Get-Features" from an admin prompt to see all the features you can install
+$dismAppList = "IIS-ASPNET45,IIS-CertProvider,IIS-ManagementService,IIS-WebServer,IIS-ApplicationDevelopment,IIS-RequestFiltering,IIS-HttpLogging,IIS-HttpTracing,IIS-Performance,IIS-StaticContent,IIS-DefaultDocument,IIS-WebSockets"
+
+Invoke-Expression ".\InstallApps.ps1 ""$chocolateyAppList"" ""$dismAppList"""
